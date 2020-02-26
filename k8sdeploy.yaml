@@ -5,7 +5,7 @@ metadata:
     app.kubernetes.io/name: load-balancer-example
   name: demobank-account
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app.kubernetes.io/name: load-balancer-example
