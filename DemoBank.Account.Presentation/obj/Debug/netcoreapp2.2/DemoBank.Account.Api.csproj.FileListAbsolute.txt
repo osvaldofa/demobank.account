@@ -23,9 +23,6 @@ C:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.Presentation\obj\
 C:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.Presentation\obj\Debug\netcoreapp2.2\DemoBank.Account.Api.dll
 C:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.Presentation\obj\Debug\netcoreapp2.2\DemoBank.Account.Api.xml
 C:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.Presentation\obj\Debug\netcoreapp2.2\DemoBank.Account.Api.pdb
-C:\Development\Test\DemoBank\DemoBank.Account\demobank.account\DemoBank.Account.Presentation\bin\Debug\netcoreapp2.2\appsettings.Development.json
-C:\Development\Test\DemoBank\DemoBank.Account\demobank.account\DemoBank.Account.Presentation\bin\Debug\netcoreapp2.2\appsettings.json
-C:\Development\Test\DemoBank\DemoBank.Account\demobank.account\DemoBank.Account.Presentation\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
 C:\Development\Test\DemoBank\DemoBank.Account\demobank.account\DemoBank.Account.Presentation\bin\Debug\netcoreapp2.2\DemoBank.Account.Api.deps.json
 C:\Development\Test\DemoBank\DemoBank.Account\demobank.account\DemoBank.Account.Presentation\bin\Debug\netcoreapp2.2\DemoBank.Account.Api.runtimeconfig.json
 C:\Development\Test\DemoBank\DemoBank.Account\demobank.account\DemoBank.Account.Presentation\bin\Debug\netcoreapp2.2\DemoBank.Account.Api.runtimeconfig.dev.json
@@ -48,3 +45,4 @@ C:\Development\Test\DemoBank\DemoBank.Account\demobank.account\DemoBank.Account.
 C:\Development\Test\DemoBank\DemoBank.Account\demobank.account\DemoBank.Account.Presentation\obj\Debug\netcoreapp2.2\DemoBank.Account.Api.dll
 C:\Development\Test\DemoBank\DemoBank.Account\demobank.account\DemoBank.Account.Presentation\obj\Debug\netcoreapp2.2\DemoBank.Account.Api.xml
 C:\Development\Test\DemoBank\DemoBank.Account\demobank.account\DemoBank.Account.Presentation\obj\Debug\netcoreapp2.2\DemoBank.Account.Api.pdb
+C:\Development\Test\DemoBank\DemoBank.Account\demobank.account\DemoBank.Account.Presentation\obj\Debug\netcoreapp2.2\DemoBank.Account.Api.csproj.CoreCompileInputs.cache

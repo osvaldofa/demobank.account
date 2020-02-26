@@ -8,10 +8,10 @@ namespace DemoBank.Account.Domain.Services
     public class AccountService : IAccountService
     {
         // Data repository for Account objects.
-        private IAccountRepository _accountRepository;
+        private readonly IAccountRepository _accountRepository;
 
         // Data repository for Customer objects.
-        private ICustomerRepository _customerRepository;
+        private readonly ICustomerRepository _customerRepository;
 
         /// <summary>
         /// Constructor method using dependency injection to instantiate local reference to Account Repository.
@@ -39,13 +39,6 @@ namespace DemoBank.Account.Domain.Services
                     long accountNumber = this._accountRepository.Save(newAccount);
 
                     // Create a deposit transaction.
-
-                    return accountNumber;
-                }
-                else
-                {
-                    AccountModel newAccount = new AccountModel(0, customer, 0);
-                    long accountNumber = this._accountRepository.Save(newAccount);
                     return accountNumber;
                 }                
             }
@@ -70,34 +63,28 @@ namespace DemoBank.Account.Domain.Services
         public bool UpdateAccountBalance(TransactionModel transaction)
         {
             if (transaction?.DestinationAccount?.AccountNumber > 0
-                && transaction.Value > 0
-                && !string.IsNullOrEmpty(transaction.TransactionType))
+                && transaction.Value > 0 && !string.IsNullOrEmpty(transaction.TransactionType))
             {
                 AccountModel account = this._accountRepository.GetById(transaction.DestinationAccount.AccountNumber);
 
-                if (account == null)
-                    return false;
-                else 
+                switch (transaction?.TransactionType)
                 {
-                    switch (transaction.TransactionType)
-                    {
-                        case TransactionTypes.DEPOSIT:
-                            account.Balance += transaction.Value;
-                            break;
-                        case TransactionTypes.WITHDRAW:
-                            if (account.Balance >= transaction.Value)
-                                account.Balance -= transaction.Value;
-                            else
-                                return false;
-                            break;
-                        default:
+                    case TransactionTypes.DEPOSIT:
+                        account.Balance += transaction.Value;
+                        break;
+                    case TransactionTypes.WITHDRAW:
+                        if (account.Balance >= transaction.Value)
+                            account.Balance -= transaction.Value;
+                        else
                             return false;
-                    }
-                    long accountNumber = this._accountRepository.Save(account);
-
-                    if (accountNumber > 0)
-                        return true;
+                        break;
+                    default:
+                        return false;
                 }
+                long accountNumber = this._accountRepository.Save(account);
+
+                if (accountNumber > 0)
+                    return true;
             }
             return false;            
         }

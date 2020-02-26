@@ -13,12 +13,13 @@ namespace DemoBank.Account.Presentation.Controllers
     public class AccountController : ControllerBase
     {
         private readonly ILogger _logger;
-        private IAccountService _accountService;
+        private readonly IAccountService _accountService;
 
         /// <summary>
         /// Constructor method invoking dependency injection objects.
         /// </summary>
         /// <param name="accountService">Account Service object.</param>
+        /// /// <param name="logger">Logger service object.</param>
         public AccountController(IAccountService accountService, ILogger<AccountController> logger)
         {
             this._accountService = accountService;
@@ -77,8 +78,10 @@ namespace DemoBank.Account.Presentation.Controllers
         {
             if (transaction?.DestinationAccount?.AccountNumber == accountNumber
                 && accountNumber > 0)
+            {
                 if (this._accountService.UpdateAccountBalance(transaction))
                     return true;
+            }                
             return BadRequest(false);
         }
 

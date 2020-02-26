@@ -14075,11 +14075,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Development\\Test\\DemoBank\\DemoBank.Account\\DemoBank.Test\\DemoBank.Account.Test.csproj",
+      "projectUniqueName": "C:\\Development\\Test\\DemoBank\\DemoBank.Account\\demobank.account\\DemoBank.Test\\DemoBank.Account.Test.csproj",
       "projectName": "DemoBank.Account.Test",
-      "projectPath": "C:\\Development\\Test\\DemoBank\\DemoBank.Account\\DemoBank.Test\\DemoBank.Account.Test.csproj",
+      "projectPath": "C:\\Development\\Test\\DemoBank\\DemoBank.Account\\demobank.account\\DemoBank.Test\\DemoBank.Account.Test.csproj",
       "packagesPath": "C:\\Users\\o.ferreira.alves\\.nuget\\packages\\",
-      "outputPath": "C:\\Development\\Test\\DemoBank\\DemoBank.Account\\DemoBank.Test\\obj\\",
+      "outputPath": "C:\\Development\\Test\\DemoBank\\DemoBank.Account\\demobank.account\\DemoBank.Test\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -14099,14 +14099,14 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Development\\Test\\DemoBank\\DemoBank.Account\\DemoBank.Account.Data\\DemoBank.Account.Infrastructure.Data.csproj": {
-              "projectPath": "C:\\Development\\Test\\DemoBank\\DemoBank.Account\\DemoBank.Account.Data\\DemoBank.Account.Infrastructure.Data.csproj"
+            "C:\\Development\\Test\\DemoBank\\DemoBank.Account\\demobank.account\\DemoBank.Account.Data\\DemoBank.Account.Infrastructure.Data.csproj": {
+              "projectPath": "C:\\Development\\Test\\DemoBank\\DemoBank.Account\\demobank.account\\DemoBank.Account.Data\\DemoBank.Account.Infrastructure.Data.csproj"
             },
-            "C:\\Development\\Test\\DemoBank\\DemoBank.Account\\DemoBank.Account.Domain\\DemoBank.Account.Domain.csproj": {
-              "projectPath": "C:\\Development\\Test\\DemoBank\\DemoBank.Account\\DemoBank.Account.Domain\\DemoBank.Account.Domain.csproj"
+            "C:\\Development\\Test\\DemoBank\\DemoBank.Account\\demobank.account\\DemoBank.Account.Domain\\DemoBank.Account.Domain.csproj": {
+              "projectPath": "C:\\Development\\Test\\DemoBank\\DemoBank.Account\\demobank.account\\DemoBank.Account.Domain\\DemoBank.Account.Domain.csproj"
             },
-            "C:\\Development\\Test\\DemoBank\\DemoBank.Account\\DemoBank.Account.Presentation\\DemoBank.Account.Api.csproj": {
-              "projectPath": "C:\\Development\\Test\\DemoBank\\DemoBank.Account\\DemoBank.Account.Presentation\\DemoBank.Account.Api.csproj"
+            "C:\\Development\\Test\\DemoBank\\DemoBank.Account\\demobank.account\\DemoBank.Account.Presentation\\DemoBank.Account.Api.csproj": {
+              "projectPath": "C:\\Development\\Test\\DemoBank\\DemoBank.Account\\demobank.account\\DemoBank.Account.Presentation\\DemoBank.Account.Api.csproj"
             }
           }
         }
