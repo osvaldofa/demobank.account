@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DemoBank.Account.Api</name>
+    </assembly>
+    <members>
+        <member name="T:DemoBank.Account.Presentation.Controllers.AccountController">
+            <summary>
+            Controller responsible for manage Account API.
+            </summary>
+        </member>
+        <member name="M:DemoBank.Account.Presentation.Controllers.AccountController.#ctor(DemoBank.Account.Domain.Interfaces.IAccountService,Microsoft.Extensions.Logging.ILogger{DemoBank.Account.Presentation.Controllers.AccountController})">
+            <summary>
+            Constructor method invoking dependency injection objects.
+            </summary>
+            <param name="accountService">Account Service object.</param>
+        </member>
+        <member name="M:DemoBank.Account.Presentation.Controllers.AccountController.CreateNewAccountForExistingUser(DemoBank.Account.Infrastructure.Data.Models.NewAccount)">
+            <summary>
+            POST endpoint for creation of new account for existing users.
+            </summary>
+            <param name="account">Account data (CustomerId and InitialBalance) for the new account.</param>
+            <returns>Result of account creation (account number).</returns>
+        </member>
+        <member name="M:DemoBank.Account.Presentation.Controllers.AccountController.GetAccount(System.Int64)">
+            <summary>
+            Returns an Account object searchig by Account Number.
+            </summary>
+            <param name="accountNumber"></param>
+            <returns>Account information.</returns>
+        </member>
+        <member name="M:DemoBank.Account.Presentation.Bootstrapper.ConfigureInjections(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configure dependency injections.
+            </summary>
+            <param name="service">Service collection instantiated on StartUp class.</param>
+        </member>
+    </members>
+</doc>
