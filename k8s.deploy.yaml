@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demobank.account
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: demobank.account
+  template:
+    metadata:
+      labels:
+        app: demobank.account
+    spec:
+      containers:
+      - name: demobank.account
+        image: demobank.azurecr.io/osvaldofa/demobank.account:latest
+        ports:
+        - containerPort: 80
+        resources:
+          requests:
+            cpu: 250m
+            memory: 64Mi
+          limits:
+            cpu: 500m
+            memory: 256Mi
