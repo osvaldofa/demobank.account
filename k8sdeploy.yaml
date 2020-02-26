@@ -1,0 +1,49 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demobank-account-dev-app
+  namespace: demobank
+  labels:
+    app: demobank-account-dev
+    tier: app
+    version: v1
+spec:
+  selector:
+    matchLabels:
+      app: demobank-account-dev
+      tier: app
+      version: v1
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: demobank-account-dev
+        tier: app
+        version: v1
+    spec:
+      containers:
+        - name: demobankaccount
+          image: 'demobank.azurecr.io/osvaldofa/demobank.account:latest'          
+          ports:
+            - name: http 
+              containerPort: 80
+              protocol: TCP
+          livenessProbe:
+            initialDelaySeconds: 2
+            periodSeconds: 3600
+            httpGet:
+              path: /health
+              port: 80
+          resources:
+            requests:
+              cpu: 250m
+              memory: 64Mi
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+          imagePullPolicy: IfNotPresent
+      restartPolicy: Always
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 25%
+      maxSurge: 25%
