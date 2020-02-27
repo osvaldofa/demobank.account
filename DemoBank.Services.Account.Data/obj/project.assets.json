@@ -708,11 +708,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Development\\Test\\DemoBank.Services.Account\\DemoBank.Services.Account.Data\\DemoBank.Account.Infrastructure.Data.csproj",
+      "projectUniqueName": "C:\\Development\\Test\\DemoBank\\DemoBank.Account\\demobank.account\\DemoBank.Services.Account.Data\\DemoBank.Account.Infrastructure.Data.csproj",
       "projectName": "DemoBank.Account.Infrastructure.Data",
-      "projectPath": "C:\\Development\\Test\\DemoBank.Services.Account\\DemoBank.Services.Account.Data\\DemoBank.Account.Infrastructure.Data.csproj",
+      "projectPath": "C:\\Development\\Test\\DemoBank\\DemoBank.Account\\demobank.account\\DemoBank.Services.Account.Data\\DemoBank.Account.Infrastructure.Data.csproj",
       "packagesPath": "C:\\Users\\o.ferreira.alves\\.nuget\\packages\\",
-      "outputPath": "C:\\Development\\Test\\DemoBank.Services.Account\\DemoBank.Services.Account.Data\\obj\\",
+      "outputPath": "C:\\Development\\Test\\DemoBank\\DemoBank.Account\\demobank.account\\DemoBank.Services.Account.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -732,8 +732,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Development\\Test\\DemoBank.Services.Account\\DemoBank.Services.CrossCutting\\DemoBank.Account.CrossCutting.csproj": {
-              "projectPath": "C:\\Development\\Test\\DemoBank.Services.Account\\DemoBank.Services.CrossCutting\\DemoBank.Account.CrossCutting.csproj"
+            "C:\\Development\\Test\\DemoBank\\DemoBank.Account\\demobank.account\\DemoBank.Services.CrossCutting\\DemoBank.Account.CrossCutting.csproj": {
+              "projectPath": "C:\\Development\\Test\\DemoBank\\DemoBank.Account\\demobank.account\\DemoBank.Services.CrossCutting\\DemoBank.Account.CrossCutting.csproj"
             }
           }
         }

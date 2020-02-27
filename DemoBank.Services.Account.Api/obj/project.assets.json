@@ -12183,11 +12183,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Development\\Test\\DemoBank.Services.Account\\DemoBank.Services.Account.Api\\DemoBank.Services.Account.Api.csproj",
+      "projectUniqueName": "C:\\Development\\Test\\DemoBank\\DemoBank.Account\\demobank.account\\DemoBank.Services.Account.Api\\DemoBank.Services.Account.Api.csproj",
       "projectName": "DemoBank.Services.Account.Api",
-      "projectPath": "C:\\Development\\Test\\DemoBank.Services.Account\\DemoBank.Services.Account.Api\\DemoBank.Services.Account.Api.csproj",
+      "projectPath": "C:\\Development\\Test\\DemoBank\\DemoBank.Account\\demobank.account\\DemoBank.Services.Account.Api\\DemoBank.Services.Account.Api.csproj",
       "packagesPath": "C:\\Users\\o.ferreira.alves\\.nuget\\packages\\",
-      "outputPath": "C:\\Development\\Test\\DemoBank.Services.Account\\DemoBank.Services.Account.Api\\obj\\",
+      "outputPath": "C:\\Development\\Test\\DemoBank\\DemoBank.Account\\demobank.account\\DemoBank.Services.Account.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12207,14 +12207,14 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Development\\Test\\DemoBank.Services.Account\\DemoBank.Services.Account.Data\\DemoBank.Account.Infrastructure.Data.csproj": {
-              "projectPath": "C:\\Development\\Test\\DemoBank.Services.Account\\DemoBank.Services.Account.Data\\DemoBank.Account.Infrastructure.Data.csproj"
+            "C:\\Development\\Test\\DemoBank\\DemoBank.Account\\demobank.account\\DemoBank.Services.Account.Data\\DemoBank.Account.Infrastructure.Data.csproj": {
+              "projectPath": "C:\\Development\\Test\\DemoBank\\DemoBank.Account\\demobank.account\\DemoBank.Services.Account.Data\\DemoBank.Account.Infrastructure.Data.csproj"
             },
-            "C:\\Development\\Test\\DemoBank.Services.Account\\DemoBank.Services.Account.Domain\\DemoBank.Account.Domain.csproj": {
-              "projectPath": "C:\\Development\\Test\\DemoBank.Services.Account\\DemoBank.Services.Account.Domain\\DemoBank.Account.Domain.csproj"
+            "C:\\Development\\Test\\DemoBank\\DemoBank.Account\\demobank.account\\DemoBank.Services.Account.Domain\\DemoBank.Account.Domain.csproj": {
+              "projectPath": "C:\\Development\\Test\\DemoBank\\DemoBank.Account\\demobank.account\\DemoBank.Services.Account.Domain\\DemoBank.Account.Domain.csproj"
             },
-            "C:\\Development\\Test\\DemoBank.Services.Account\\DemoBank.Services.CrossCutting\\DemoBank.Account.CrossCutting.csproj": {
-              "projectPath": "C:\\Development\\Test\\DemoBank.Services.Account\\DemoBank.Services.CrossCutting\\DemoBank.Account.CrossCutting.csproj"
+            "C:\\Development\\Test\\DemoBank\\DemoBank.Account\\demobank.account\\DemoBank.Services.CrossCutting\\DemoBank.Account.CrossCutting.csproj": {
+              "projectPath": "C:\\Development\\Test\\DemoBank\\DemoBank.Account\\demobank.account\\DemoBank.Services.CrossCutting\\DemoBank.Account.CrossCutting.csproj"
             }
           }
         }
