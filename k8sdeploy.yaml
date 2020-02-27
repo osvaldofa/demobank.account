@@ -9,26 +9,28 @@ metadata:
 spec:
   type: LoadBalancer
   ports:
-  - port: 443
-    targetPort: 3000
+  - port: 5000
+    targetPort: 5000
     protocol: TCP
-    name: https
+    name: http
   selector:
     run: demobank-account
 ---
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: demobank-account
+  name: demobank-account-app
 spec:
   replicas: 2
   template:
     metadata:
       labels:
-        run: demobank-account
+        run: demobank-account-app-template
     spec:
       containers:
       - name: demobank-account
         image: demobank.azurecr.io/osvaldofa/demobank.transaction:latest
         ports:
-        - containerPort: 80
+        - containerPort: 5000
+      imagePullSecrets:
+      - name: demobankacrsecret

@@ -24,4 +24,4 @@ WORKDIR /app
 COPY --from=build-env /app .
 ENTRYPOINT ["dotnet", "DemoBank.Account.Api.dll"]
 
-EXPOSE 80
+EXPOSE 5000
