@@ -1,0 +1,16 @@
+C:\Development\Test\DemoBank\DemoBank.Account\DemoBank.CrossCutting\bin\Release\netcoreapp2.2\DemoBank.Account.CrossCutting.deps.json
+C:\Development\Test\DemoBank\DemoBank.Account\DemoBank.CrossCutting\bin\Release\netcoreapp2.2\DemoBank.Account.CrossCutting.dll
+C:\Development\Test\DemoBank\DemoBank.Account\DemoBank.CrossCutting\bin\Release\netcoreapp2.2\DemoBank.Account.CrossCutting.pdb
+C:\Development\Test\DemoBank\DemoBank.Account\DemoBank.CrossCutting\obj\Release\netcoreapp2.2\DemoBank.Account.CrossCutting.csprojAssemblyReference.cache
+C:\Development\Test\DemoBank\DemoBank.Account\DemoBank.CrossCutting\obj\Release\netcoreapp2.2\DemoBank.Account.CrossCutting.AssemblyInfoInputs.cache
+C:\Development\Test\DemoBank\DemoBank.Account\DemoBank.CrossCutting\obj\Release\netcoreapp2.2\DemoBank.Account.CrossCutting.AssemblyInfo.cs
+C:\Development\Test\DemoBank\DemoBank.Account\DemoBank.CrossCutting\obj\Release\netcoreapp2.2\DemoBank.Account.CrossCutting.dll
+C:\Development\Test\DemoBank\DemoBank.Account\DemoBank.CrossCutting\obj\Release\netcoreapp2.2\DemoBank.Account.CrossCutting.pdb
+C:\Development\Test\DemoBank\DemoBank.Account\demobank.account\DemoBank.CrossCutting\bin\Release\netcoreapp2.2\DemoBank.Account.CrossCutting.deps.json
+C:\Development\Test\DemoBank\DemoBank.Account\demobank.account\DemoBank.CrossCutting\bin\Release\netcoreapp2.2\DemoBank.Account.CrossCutting.dll
+C:\Development\Test\DemoBank\DemoBank.Account\demobank.account\DemoBank.CrossCutting\bin\Release\netcoreapp2.2\DemoBank.Account.CrossCutting.pdb
+C:\Development\Test\DemoBank\DemoBank.Account\demobank.account\DemoBank.CrossCutting\obj\Release\netcoreapp2.2\DemoBank.Account.CrossCutting.csprojAssemblyReference.cache
+C:\Development\Test\DemoBank\DemoBank.Account\demobank.account\DemoBank.CrossCutting\obj\Release\netcoreapp2.2\DemoBank.Account.CrossCutting.AssemblyInfoInputs.cache
+C:\Development\Test\DemoBank\DemoBank.Account\demobank.account\DemoBank.CrossCutting\obj\Release\netcoreapp2.2\DemoBank.Account.CrossCutting.AssemblyInfo.cs
+C:\Development\Test\DemoBank\DemoBank.Account\demobank.account\DemoBank.CrossCutting\obj\Release\netcoreapp2.2\DemoBank.Account.CrossCutting.dll
+C:\Development\Test\DemoBank\DemoBank.Account\demobank.account\DemoBank.CrossCutting\obj\Release\netcoreapp2.2\DemoBank.Account.CrossCutting.pdb

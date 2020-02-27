@@ -9,8 +9,8 @@ metadata:
 spec:
   type: LoadBalancer
   ports:
-  - port: 5000
-    targetPort: 5000
+  - port: 80
+    targetPort: 80
     protocol: TCP
     name: http
   selector:
@@ -31,6 +31,6 @@ spec:
       - name: demobank-account
         image: demobank.azurecr.io/osvaldofa/demobank.transaction:latest
         ports:
-        - containerPort: 5000
+        - containerPort: 8080
       imagePullSecrets:
       - name: demobankacrsecret
