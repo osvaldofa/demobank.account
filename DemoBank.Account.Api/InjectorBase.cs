@@ -1,5 +1,7 @@
 ﻿using DemoBank.Account.Domain.Interfaces;
 using DemoBank.Account.Domain.Services;
+using DemoBank.Account.Infrastructure.Communication;
+using DemoBank.Account.Infrastructure.Communication.Services;
 using DemoBank.Account.Infrastructure.Data.Repositories;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -25,8 +27,11 @@ namespace DemoBank.Account.Api
 
         private void ConfigureServiceInjections(IServiceCollection service)
         {
-            // Attaching external Account service dependency injection.
+            // Attaching  Account service dependency injection.
             service.AddSingleton(typeof(IAccountService), typeof(AccountService));
+
+            // Attaching external transaction service dependency injection.
+            service.AddSingleton(typeof(ITransactionService), typeof(TransactionService));
         }
 
         private void ConfigureRepositoryInjections(IServiceCollection service)

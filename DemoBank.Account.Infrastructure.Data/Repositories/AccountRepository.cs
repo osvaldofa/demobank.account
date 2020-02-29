@@ -26,6 +26,15 @@ namespace DemoBank.Account.Infrastructure.Data.Repositories
         }
 
         /// <summary>
+        /// Returns all accounts.
+        /// </summary>
+        /// <returns>The account list.</returns>
+        public AccountModel[] GetAll()
+        {
+            return this.Accounts.ToArray();
+        }
+
+        /// <summary>
         /// Get an Account object based on Account Number.
         /// </summary>
         /// <param name="accountNumber">The retrieved account, or null if not found.</param>

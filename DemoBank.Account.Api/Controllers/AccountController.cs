@@ -85,6 +85,17 @@ namespace DemoBank.Account.Api.Controllers
             return BadRequest(false);
         }
 
+        /// <summary>
+        /// Returns the entire accounts list.
+        /// </summary>
+        /// <returns>The accounts list.</returns>
+        /// 
+        [HttpGet]
+        public ActionResult<AccountModel[]> GetAllAccounts()
+        {
+            return this._accountService.GetAll();
+        }
+
         private bool VerifyAccountModel(NewAccount account)
         {
             if (account?.CustomerId != null && account.CustomerId > 0 && account?.InitialCredit != null)

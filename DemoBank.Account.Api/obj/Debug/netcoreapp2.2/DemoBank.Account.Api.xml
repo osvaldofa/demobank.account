@@ -38,6 +38,13 @@
             <param name="transaction">Transaction to be applied (deposit/withdraw)</param>
             <returns></returns>
         </member>
+        <member name="M:DemoBank.Account.Api.Controllers.AccountController.GetAllAccounts">
+            <summary>
+            Returns the entire accounts list.
+            </summary>
+            <returns>The accounts list.</returns>
+            
+        </member>
         <member name="T:DemoBank.Account.Api.InjectorBase">
             <summary>
             Startup extension methods.

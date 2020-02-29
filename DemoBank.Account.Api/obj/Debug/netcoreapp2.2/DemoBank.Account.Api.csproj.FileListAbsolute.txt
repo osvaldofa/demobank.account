@@ -25,3 +25,5 @@ C:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.Api\obj\Debug\net
 C:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.Api\obj\Debug\netcoreapp2.2\DemoBank.Account.Api.dll
 C:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.Api\obj\Debug\netcoreapp2.2\DemoBank.Account.Api.xml
 C:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.Api\obj\Debug\netcoreapp2.2\DemoBank.Account.Api.pdb
+C:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.Api\bin\Debug\netcoreapp2.2\DemoBank.Account.Infrastructure.Communication.dll
+C:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.Api\bin\Debug\netcoreapp2.2\DemoBank.Account.Infrastructure.Communication.pdb

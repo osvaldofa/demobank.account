@@ -14,6 +14,7 @@ RUN dotnet restore
 
 # Copy everything else and build
 WORKDIR /DemoBank.Account.Api
+RUN mv appsettings.Docker.json appsettings.json
 RUN dotnet publish -c Release -o /app
 
 # Build runtime image

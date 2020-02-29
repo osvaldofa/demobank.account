@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DemoBank.Account.CrossCutting\DemoBank.Account.CrossCutting.csproj" />
+    <ProjectReference Include="..\DemoBank.Account.Infrastructure.Communication\DemoBank.Account.Infrastructure.Communication.csproj" />
     <ProjectReference Include="..\DemoBank.Account.Infrastructure.Data\DemoBank.Account.Infrastructure.Data.csproj" />
   </ItemGroup>
 

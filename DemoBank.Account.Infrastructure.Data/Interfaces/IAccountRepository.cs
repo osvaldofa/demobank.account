@@ -8,6 +8,8 @@ namespace DemoBank.Account.Infrastructure.Data.Repositories
     public interface IAccountRepository
     {
         long Save(AccountModel account);
-        AccountModel GetById(long AccountNumber);        
+        AccountModel GetById(long AccountNumber);
+
+        AccountModel[] GetAll();
     }
 }

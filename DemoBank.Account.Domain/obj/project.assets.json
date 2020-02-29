@@ -4449,6 +4449,20 @@
           "bin/placeholder/DemoBank.Account.CrossCutting.dll": {}
         }
       },
+      "DemoBank.Account.Infrastructure.Communication/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "DemoBank.Account.Infrastructure.Data": "1.0.0",
+          "Microsoft.AspNetCore.App": "2.2.0"
+        },
+        "compile": {
+          "bin/placeholder/DemoBank.Account.Infrastructure.Communication.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DemoBank.Account.Infrastructure.Communication.dll": {}
+        }
+      },
       "DemoBank.Account.Infrastructure.Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
@@ -12142,6 +12156,11 @@
       "path": "../DemoBank.Account.CrossCutting/DemoBank.Account.CrossCutting.csproj",
       "msbuildProject": "../DemoBank.Account.CrossCutting/DemoBank.Account.CrossCutting.csproj"
     },
+    "DemoBank.Account.Infrastructure.Communication/1.0.0": {
+      "type": "project",
+      "path": "../DemoBank.Account.Infrastructure.Communication/DemoBank.Account.Infrastructure.Communication.csproj",
+      "msbuildProject": "../DemoBank.Account.Infrastructure.Communication/DemoBank.Account.Infrastructure.Communication.csproj"
+    },
     "DemoBank.Account.Infrastructure.Data/1.0.0": {
       "type": "project",
       "path": "../DemoBank.Account.Infrastructure.Data/DemoBank.Account.Infrastructure.Data.csproj",
@@ -12151,6 +12170,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
       "DemoBank.Account.CrossCutting >= 1.0.0",
+      "DemoBank.Account.Infrastructure.Communication >= 1.0.0",
       "DemoBank.Account.Infrastructure.Data >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.NETCore.App >= 2.2.0"
@@ -12189,6 +12209,9 @@
           "projectReferences": {
             "C:\\Development\\Test\\DemoBank\\DemoBank.Account\\DemoBank.Account.CrossCutting\\DemoBank.Account.CrossCutting.csproj": {
               "projectPath": "C:\\Development\\Test\\DemoBank\\DemoBank.Account\\DemoBank.Account.CrossCutting\\DemoBank.Account.CrossCutting.csproj"
+            },
+            "C:\\Development\\Test\\DemoBank\\DemoBank.Account\\DemoBank.Account.Infrastructure.Communication\\DemoBank.Account.Infrastructure.Communication.csproj": {
+              "projectPath": "C:\\Development\\Test\\DemoBank\\DemoBank.Account\\DemoBank.Account.Infrastructure.Communication\\DemoBank.Account.Infrastructure.Communication.csproj"
             },
             "C:\\Development\\Test\\DemoBank\\DemoBank.Account\\DemoBank.Account.Infrastructure.Data\\DemoBank.Account.Infrastructure.Data.csproj": {
               "projectPath": "C:\\Development\\Test\\DemoBank\\DemoBank.Account\\DemoBank.Account.Infrastructure.Data\\DemoBank.Account.Infrastructure.Data.csproj"

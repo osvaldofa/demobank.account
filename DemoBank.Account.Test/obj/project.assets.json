@@ -5127,6 +5127,7 @@
         "framework": ".NETCoreApp,Version=v2.2",
         "dependencies": {
           "DemoBank.Account.CrossCutting": "1.0.0",
+          "DemoBank.Account.Infrastructure.Communication": "1.0.0",
           "DemoBank.Account.Infrastructure.Data": "1.0.0",
           "Microsoft.AspNetCore.App": "2.2.0"
         },

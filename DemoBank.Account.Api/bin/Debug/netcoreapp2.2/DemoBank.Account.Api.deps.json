@@ -165,6 +165,7 @@
       "DemoBank.Account.Domain/1.0.0": {
         "dependencies": {
           "DemoBank.Account.CrossCutting": "1.0.0",
+          "DemoBank.Account.Infrastructure.Communication": "1.0.0",
           "DemoBank.Account.Infrastructure.Data": "1.0.0",
           "Microsoft.AspNetCore.App": "2.2.0"
         },
@@ -173,6 +174,18 @@
         },
         "compile": {
           "DemoBank.Account.Domain.dll": {}
+        }
+      },
+      "DemoBank.Account.Infrastructure.Communication/1.0.0": {
+        "dependencies": {
+          "DemoBank.Account.Infrastructure.Data": "1.0.0",
+          "Microsoft.AspNetCore.App": "2.2.0"
+        },
+        "runtime": {
+          "DemoBank.Account.Infrastructure.Communication.dll": {}
+        },
+        "compile": {
+          "DemoBank.Account.Infrastructure.Communication.dll": {}
         }
       },
       "DemoBank.Account.Infrastructure.Data/1.0.0": {
@@ -3452,6 +3465,11 @@
       "sha512": ""
     },
     "DemoBank.Account.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DemoBank.Account.Infrastructure.Communication/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
