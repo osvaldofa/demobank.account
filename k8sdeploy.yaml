@@ -14,18 +14,19 @@ spec:
     protocol: TCP
     name: http
   selector:
-    run: demobank-account
+    run: demobank-account-app
 ---
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: demobank-account-app
 spec:
+  selector:
+    matchLabels:
+      app: demobank-account
+      tier: app
+      version: v1
   replicas: 2
-  template:
-    metadata:
-      labels:
-        run: demobank-account-app-template
     spec:
       containers:
       - name: demobank-account
