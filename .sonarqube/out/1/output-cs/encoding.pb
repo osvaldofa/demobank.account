@@ -1,9 +1,0 @@
-~
-uC:\Development\Test\DemoBank\DemoBank.Account\demobank.account\DemoBank.Account.Data\Interfaces\IAccountRepository.csutf-8
-vC:\Development\Test\DemoBank\DemoBank.Account\demobank.account\DemoBank.Account.Data\Interfaces\ICustomerRepository.csutf-8t
-kC:\Development\Test\DemoBank\DemoBank.Account\demobank.account\DemoBank.Account.Data\Models\AccountModel.csutf-8u
-lC:\Development\Test\DemoBank\DemoBank.Account\demobank.account\DemoBank.Account.Data\Models\CustomerModel.csutf-8r
-iC:\Development\Test\DemoBank\DemoBank.Account\demobank.account\DemoBank.Account.Data\Models\NewAccount.csutf-8x
-oC:\Development\Test\DemoBank\DemoBank.Account\demobank.account\DemoBank.Account.Data\Models\TransactionModel.csutf-8
-vC:\Development\Test\DemoBank\DemoBank.Account\demobank.account\DemoBank.Account.Data\Repositories\AccountRepository.csutf-8€
-wC:\Development\Test\DemoBank\DemoBank.Account\demobank.account\DemoBank.Account.Data\Repositories\CustomerRepository.csutf-8

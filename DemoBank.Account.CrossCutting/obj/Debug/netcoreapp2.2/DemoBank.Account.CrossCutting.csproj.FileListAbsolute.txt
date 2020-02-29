@@ -1,0 +1,7 @@
+C:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.CrossCutting\bin\Debug\netcoreapp2.2\DemoBank.Account.CrossCutting.deps.json
+C:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.CrossCutting\bin\Debug\netcoreapp2.2\DemoBank.Account.CrossCutting.dll
+C:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.CrossCutting\bin\Debug\netcoreapp2.2\DemoBank.Account.CrossCutting.pdb
+C:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.CrossCutting\obj\Debug\netcoreapp2.2\DemoBank.Account.CrossCutting.AssemblyInfoInputs.cache
+C:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.CrossCutting\obj\Debug\netcoreapp2.2\DemoBank.Account.CrossCutting.AssemblyInfo.cs
+C:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.CrossCutting\obj\Debug\netcoreapp2.2\DemoBank.Account.CrossCutting.dll
+C:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.CrossCutting\obj\Debug\netcoreapp2.2\DemoBank.Account.CrossCutting.pdb

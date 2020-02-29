@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DemoBank.Account.Api</name>
+    </assembly>
+    <members>
+        <member name="T:DemoBank.Account.Api.Controllers.AccountController">
+            <summary>
+            Controller responsible for manage Account API.
+            </summary>
+        </member>
+        <member name="M:DemoBank.Account.Api.Controllers.AccountController.#ctor(DemoBank.Account.Domain.Interfaces.IAccountService,Microsoft.Extensions.Logging.ILogger{DemoBank.Account.Api.Controllers.AccountController})">
+            <summary>
+            Constructor method invoking dependency injection objects.
+            </summary>
+            <param name="accountService">Account Service object.</param>
+            /// <param name="logger">Logger service object.</param>
+        </member>
+        <member name="M:DemoBank.Account.Api.Controllers.AccountController.CreateNewAccountForExistingUser(DemoBank.Account.Infrastructure.Data.Models.NewAccount)">
+            <summary>
+            POST endpoint for creation of new account for existing users.
+            </summary>
+            <param name="account">Account data (CustomerId and InitialBalance) for the new account.</param>
+            <returns>Result of account creation (account number).</returns>
+        </member>
+        <member name="M:DemoBank.Account.Api.Controllers.AccountController.GetAccount(System.Int64)">
+            <summary>
+            Returns an Account object searchig by Account Number.
+            </summary>
+            <param name="accountNumber"></param>
+            <returns>Account information.</returns>
+        </member>
+        <member name="M:DemoBank.Account.Api.Controllers.AccountController.UpdateBalance(System.Int64,DemoBank.Account.Infrastructure.Data.Models.TransactionModel)">
+            <summary>
+            Internal API used to synchronize account data during transaction processing in different services.
+            </summary>
+            <param name="accountNumber">Account number.</param>
+            <param name="transaction">Transaction to be applied (deposit/withdraw)</param>
+            <returns></returns>
+        </member>
+        <member name="T:DemoBank.Account.Api.InjectorBase">
+            <summary>
+            Startup extension methods.
+            </summary>
+        </member>
+        <member name="M:DemoBank.Account.Api.InjectorBase.ConfigureInjections(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configure dependency injections.
+            </summary>
+            <param name="service">Service collection instantiated on StartUp class.</param>
+        </member>
+        <member name="T:DemoBank.Account.Api.Startup">
+            <summary>
+            Startup object.
+            </summary>
+        </member>
+        <member name="M:DemoBank.Account.Api.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Startup configuration constructor.
+            </summary>
+            <param name="configuration">Configuration aggregator instantiated by dependency injection.</param>
+        </member>
+        <member name="M:DemoBank.Account.Api.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services">Services collection.</param>
+        </member>
+        <member name="M:DemoBank.Account.Api.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app">Application builder</param>
+            <param name="env">Hosting environment</param>
+        </member>
+    </members>
+</doc>
