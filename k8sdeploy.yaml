@@ -5,7 +5,7 @@ metadata:
     service.beta.kubernetes.io/azure-load-balancer-internal: "false"
   name: demobank-account-svc
   labels:
-    run: demobank-account
+    app: demobank-account
 spec:
   type: LoadBalancer
   ports:
@@ -14,24 +14,28 @@ spec:
     protocol: TCP
     name: http
   selector:
-    run: demobank-account-app
+    app: demobank-account
 ---
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: demobank-account-app
+  name: demobank-account-app-dep
 spec:
   selector:
     matchLabels:
       app: demobank-account
-      tier: app
-      version: v1
   replicas: 2
+  template:
+    metadata:
+      labels:
+        app: demobank-account
     spec:
       containers:
       - name: demobank-account
-        image: demobank.azurecr.io/osvaldofa/demobank.transaction:latest
+        image: demobank.azurecr.io/osvaldofa/demobank.account:latest
         ports:
-        - containerPort: 80
+        - name: http 
+          containerPort: 80
+          protocol: TCP
       imagePullSecrets:
       - name: demobankacrsecret
