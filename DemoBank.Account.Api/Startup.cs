@@ -50,11 +50,12 @@ namespace DemoBank.Account.Api
 
             services.AddCors(options =>
             {
-                options.AddPolicy("AllowAnyOrigin",
-                builder =>
-                {
-                    builder.AllowAnyOrigin().AllowAnyMethod();
-                });
+                options.AddPolicy(
+                  "CorsPolicy",
+                  builder => builder.WithOrigins("http://localhost:4200")
+                  .AllowAnyMethod()
+                  .AllowAnyHeader()
+                  .AllowCredentials());
             });
         }
 
@@ -81,6 +82,7 @@ namespace DemoBank.Account.Api
                 c.SwaggerEndpoint($"{swaggerJsonBasePath}/swagger/v1/swagger.json", "DemoBank API - Account Service V1");
             });
 
+            app.UseCors("CorsPolicy");
             app.UseResponseCompression();
             app.UseMvc();
         }

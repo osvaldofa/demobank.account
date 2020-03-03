@@ -94,7 +94,7 @@ namespace DemoBank.Account.Api.Controllers
         public ActionResult<AccountModel[]> GetAllAccounts()
         {
             return this._accountService.GetAll();
-        }
+        }       
 
         private bool VerifyAccountModel(NewAccount account)
         {
