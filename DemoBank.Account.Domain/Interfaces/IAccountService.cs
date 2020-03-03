@@ -9,6 +9,7 @@ namespace DemoBank.Account.Domain.Interfaces
     {
         long CreateNewAccountForExistingUser(NewAccount account);
         AccountModel GetAccountById(long accountId);
+        AccountModel[] GetAll();
         bool UpdateAccountBalance(TransactionModel transaction);
     }
 }

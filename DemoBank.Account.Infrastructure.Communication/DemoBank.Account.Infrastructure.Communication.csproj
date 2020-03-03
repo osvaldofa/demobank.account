@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+	<ProjectGuid>78f39bd6-8e6d-4827-aad2-18c2556cea8d</ProjectGuid>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DemoBank.Account.Infrastructure.Data\DemoBank.Account.Infrastructure.Data.csproj" />
+  </ItemGroup>
+
+</Project>

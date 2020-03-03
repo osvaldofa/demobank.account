@@ -2,10 +2,17 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
+	<ProjectGuid>0769634d-86b7-4045-92d6-ee6f338ee501</ProjectGuid>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DemoBank.Account.Data\DemoBank.Account.Infrastructure.Data.csproj" />
+    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DemoBank.Account.CrossCutting\DemoBank.Account.CrossCutting.csproj" />
+    <ProjectReference Include="..\DemoBank.Account.Infrastructure.Communication\DemoBank.Account.Infrastructure.Communication.csproj" />
+    <ProjectReference Include="..\DemoBank.Account.Infrastructure.Data\DemoBank.Account.Infrastructure.Data.csproj" />
   </ItemGroup>
 
 </Project>

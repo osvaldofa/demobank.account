@@ -3,18 +3,18 @@ WORKDIR /
 
 # Copy csproj and restore as distinct layers
 COPY *.sln ./
-#COPY nuget.config ./
-#COPY DemoBank.Account.Presentation/DemoBank.Account.Api.csproj DemoBank.Account.Api/
-COPY DemoBank.Account.Presentation/*.* DemoBank.Account.Api/
-COPY DemoBank.Account.Domain/DemoBank.Account.Domain.csproj DemoBank.Account.Domain/
-COPY DemoBank.Account.Data/DemoBank.Account.Infrastructure.Data.csproj DemoBank.Account.Infrastructure.Data/
-COPY DemoBank.CrossCutting/DemoBank.Account.CrossCutting.csproj DemoBank.Account.CrossCutting/
-COPY DemoBank.Test/DemoBank.Account.Test.csproj DemoBank.Account.Test/
+COPY DemoBank.Account.Api/*.* DemoBank.Account.Api/
+COPY DemoBank.Account.Domain/*.* DemoBank.Account.Domain/
+COPY DemoBank.Account.Infrastructure.Data/*.* DemoBank.Account.Infrastructure.Data/
+COPY DemoBank.Account.CrossCutting/*.* DemoBank.Account.CrossCutting/
+COPY DemoBank.Account.Test/*.* DemoBank.Account.Test/
+
 COPY . ./
 RUN dotnet restore
 
 # Copy everything else and build
 WORKDIR /DemoBank.Account.Api
+RUN mv appsettings.Docker.json appsettings.json
 RUN dotnet publish -c Release -o /app
 
 # Build runtime image

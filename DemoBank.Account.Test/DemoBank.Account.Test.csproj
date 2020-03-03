@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+	<ProjectGuid>cec2cbc4-4a5e-4d63-87d8-9279d477b1fd</ProjectGuid>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.2.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="1.4.0" />
+    <PackageReference Include="MSTest.TestFramework" Version="1.4.0" />
+    <PackageReference Include="coverlet.msbuild" Version="2.6.0">
+		<PrivateAssets>all</PrivateAssets>
+		<IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+	</PackageReference>
+    <PackageReference Include="NSubstitute" Version="4.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DemoBank.Account.Api\DemoBank.Account.Api.csproj" />
+    <ProjectReference Include="..\DemoBank.Account.Domain\DemoBank.Account.Domain.csproj" />
+    <ProjectReference Include="..\DemoBank.Account.Infrastructure.Communication\DemoBank.Account.Infrastructure.Communication.csproj" />
+    <ProjectReference Include="..\DemoBank.Account.Infrastructure.Data\DemoBank.Account.Infrastructure.Data.csproj" />
+  </ItemGroup>
+
+</Project>
