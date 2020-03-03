@@ -28,7 +28,6 @@ namespace DemoBank.Account.Api
             Configuration = configuration;
         }
 
-        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
         public IConfiguration Configuration { get; }
 
@@ -51,12 +50,10 @@ namespace DemoBank.Account.Api
 
             services.AddCors(options =>
             {
-                options.AddPolicy(MyAllowSpecificOrigins,
+                options.AddPolicy("AllowAnyOrigin",
                 builder =>
                 {
-                    builder.WithOrigins("http://localhost", "http://52.149.205.126")
-                                        .AllowAnyHeader()
-                                        .AllowAnyMethod();
+                    builder.AllowAnyOrigin().AllowAnyMethod();
                 });
             });
         }
