@@ -37,6 +37,7 @@ namespace DemoBank.Account.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddResponseCompression();
             
             // Configuring dependency injections
             ConfigureInjections(services);
@@ -70,6 +71,7 @@ namespace DemoBank.Account.Api
                 c.SwaggerEndpoint($"{swaggerJsonBasePath}/swagger/v1/swagger.json", "DemoBank API - Account Service V1");
             });
 
+            app.UseResponseCompression();
             app.UseMvc();
         }
     }
