@@ -15,3 +15,8 @@ C:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.Domain\obj\Debug\
 C:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.Domain\obj\Debug\netcoreapp2.2\DemoBank.Account.Domain.pdb
 C:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.Domain\bin\Debug\netcoreapp2.2\DemoBank.Account.Infrastructure.Communication.dll
 C:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.Domain\bin\Debug\netcoreapp2.2\DemoBank.Account.Infrastructure.Communication.pdb
+C:\Development\Test\DemoBank\DemoBank.Account\TEST_RESULTS\DemoBank.Account.Domain.deps.json
+C:\Development\Test\DemoBank\DemoBank.Account\TEST_RESULTS\DemoBank.Account.Domain.runtimeconfig.json
+C:\Development\Test\DemoBank\DemoBank.Account\TEST_RESULTS\DemoBank.Account.Domain.runtimeconfig.dev.json
+C:\Development\Test\DemoBank\DemoBank.Account\TEST_RESULTS\DemoBank.Account.Domain.dll
+C:\Development\Test\DemoBank\DemoBank.Account\TEST_RESULTS\DemoBank.Account.Domain.pdb

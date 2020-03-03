@@ -27,3 +27,14 @@ C:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.Api\obj\Debug\net
 C:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.Api\obj\Debug\netcoreapp2.2\DemoBank.Account.Api.pdb
 C:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.Api\bin\Debug\netcoreapp2.2\DemoBank.Account.Infrastructure.Communication.dll
 C:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.Api\bin\Debug\netcoreapp2.2\DemoBank.Account.Infrastructure.Communication.pdb
+C:\Development\Test\DemoBank\DemoBank.Account\TEST_RESULTS\appsettings.Development.json
+C:\Development\Test\DemoBank\DemoBank.Account\TEST_RESULTS\appsettings.Docker.Development.json
+C:\Development\Test\DemoBank\DemoBank.Account\TEST_RESULTS\appsettings.Docker.json
+C:\Development\Test\DemoBank\DemoBank.Account\TEST_RESULTS\appsettings.json
+C:\Development\Test\DemoBank\DemoBank.Account\TEST_RESULTS\Properties\launchSettings.json
+C:\Development\Test\DemoBank\DemoBank.Account\TEST_RESULTS\DemoBank.Account.Api.deps.json
+C:\Development\Test\DemoBank\DemoBank.Account\TEST_RESULTS\DemoBank.Account.Api.runtimeconfig.json
+C:\Development\Test\DemoBank\DemoBank.Account\TEST_RESULTS\DemoBank.Account.Api.runtimeconfig.dev.json
+C:\Development\Test\DemoBank\DemoBank.Account\TEST_RESULTS\DemoBank.Account.Api.dll
+C:\Development\Test\DemoBank\DemoBank.Account\TEST_RESULTS\DemoBank.Account.Api.pdb
+C:\Development\Test\DemoBank\DemoBank.Account\TEST_RESULTS\DemoBank.Account.Api.xml

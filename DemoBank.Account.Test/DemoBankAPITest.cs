@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NSubstitute;
+using DemoBank.Account.Infrastructure.Communication;
 
 namespace DemoBank.Test
 {
@@ -16,11 +17,13 @@ namespace DemoBank.Test
         private ICustomerRepository customerRepository;
         private IAccountRepository accountRepository;
 
-        private IAccountService accountService;        
+        private IAccountService accountService;
+        private ITransactionService transactionService;
 
         private AccountController accountController;
 
         private ILogger<AccountController> accountLogger;
+        private ILogger<AccountService> serviceLogger;        
 
         /// <summary>
         /// Initializes mock objects for test purposes.
@@ -29,12 +32,13 @@ namespace DemoBank.Test
         public void TestInitialization()
         {
             this.customerRepository = Substitute.For<ICustomerRepository>();            
-            this.accountRepository = Substitute.For<IAccountRepository>();
-
-            this.accountService = new AccountService(this.accountRepository, this.customerRepository);            
+            this.accountRepository = Substitute.For<IAccountRepository>();            
 
             this.accountLogger = Substitute.For<ILogger<AccountController>>();
+            this.serviceLogger = Substitute.For<ILogger<AccountService>>();
             
+            this.transactionService = Substitute.For<ITransactionService>();
+            this.accountService = new AccountService(this.accountRepository, this.customerRepository, this.serviceLogger, this.transactionService);
             this.accountController = new AccountController(this.accountService, this.accountLogger);            
         }
 
