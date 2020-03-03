@@ -28,6 +28,8 @@ namespace DemoBank.Account.Api
             Configuration = configuration;
         }
 
+        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
         public IConfiguration Configuration { get; }
 
         /// <summary>
@@ -45,6 +47,17 @@ namespace DemoBank.Account.Api
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "DemoBank API - Account Service", Version = "v1" });
+            });
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy(MyAllowSpecificOrigins,
+                builder =>
+                {
+                    builder.WithOrigins("http://localhost", "http://52.149.205.126")
+                                        .AllowAnyHeader()
+                                        .AllowAnyMethod();
+                });
             });
         }
 
