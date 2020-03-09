@@ -78,10 +78,9 @@ namespace DemoBank.Account.Api.Controllers
         public ActionResult<bool> UpdateBalance(long accountNumber, [FromBody] TransactionModel transaction)
         {
             if (transaction?.DestinationAccount?.AccountNumber == accountNumber
-                && accountNumber > 0)
+                && accountNumber > 0 && this._accountService.UpdateAccountBalance(transaction))
             {
-                if (this._accountService.UpdateAccountBalance(transaction))
-                    return true;
+                return true;
             }
             return BadRequest(false);
         }
