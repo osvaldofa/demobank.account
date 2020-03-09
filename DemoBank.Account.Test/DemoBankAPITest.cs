@@ -156,6 +156,23 @@ namespace DemoBank.Test
         }
 
         [TestMethod]
+        public void TestUpdateAccountBalanceInvalidAccount()
+        {
+            // Set account repository mock.
+            CustomerModel customer = new CustomerModel(1010, "John", "Doe");
+            AccountModel account = new AccountModel(1101, customer, 100);
+            TransactionModel transaction = new TransactionModel();
+            transaction.DestinationAccount = account;
+            transaction.TransactionType = TransactionTypes.DEPOSIT;
+            transaction.Value = 100;
+
+            this.accountRepository.GetById(1101).Returns(account);
+            this.accountRepository.Save(account).ReturnsForAnyArgs(1101);
+
+            Assert.IsFalse(this.accountController.UpdateBalance(0, transaction).Value);
+        }
+
+        [TestMethod]
         public void GetAllAccounts()
         {
             // Set account repository mock.
