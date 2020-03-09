@@ -20,7 +20,7 @@ namespace DemoBank.Account.Api.Controllers
         /// Constructor method invoking dependency injection objects.
         /// </summary>
         /// <param name="accountService">Account Service object.</param>
-        /// /// <param name="logger">Logger service object.</param>
+        /// <param name="logger">Logger service object.</param>        
         public AccountController(IAccountService accountService, ILogger<AccountController> logger)
         {
             this._accountService = accountService;

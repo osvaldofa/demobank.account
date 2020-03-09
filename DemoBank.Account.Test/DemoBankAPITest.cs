@@ -96,6 +96,20 @@ namespace DemoBank.Test
         }
 
         /// <summary>
+        /// Test the creation of new account for an invalid customer.
+        /// </summary>
+        [TestMethod]
+        public void TestCreateNewAccountWithInvalidRequest()
+        {
+            NewAccount newAccount = new NewAccount();
+            newAccount.InitialCredit = 100;
+            
+            Assert.IsInstanceOfType(this.accountController.CreateNewAccountForExistingUser(newAccount).Result, 
+                typeof(BadRequestObjectResult));
+        }
+
+
+        /// <summary>
         /// Test account search by account number.
         /// </summary>
         [TestMethod]
@@ -151,7 +165,7 @@ namespace DemoBank.Test
             this.accountRepository.GetAll().ReturnsForAnyArgs(accounts);
 
             Assert.AreEqual(this.accountController.GetAllAccounts().Value.Length, 1);
-        }
+        }        
 
         #endregion
 
