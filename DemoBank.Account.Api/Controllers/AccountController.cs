@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using DemoBank.Account.Domain.Interfaces;
 using Microsoft.Extensions.Logging;
+using System.Diagnostics.CodeAnalysis;
 
 namespace DemoBank.Account.Api.Controllers
 {
@@ -81,7 +82,7 @@ namespace DemoBank.Account.Api.Controllers
             {
                 if (this._accountService.UpdateAccountBalance(transaction))
                     return true;
-            }                
+            }
             return BadRequest(false);
         }
 
@@ -96,6 +97,7 @@ namespace DemoBank.Account.Api.Controllers
             return this._accountService.GetAll();
         }       
 
+        [ExcludeFromCodeCoverage]
         private bool VerifyAccountModel(NewAccount account)
         {
             if (account?.CustomerId != null && account.CustomerId > 0 && account?.InitialCredit != null)

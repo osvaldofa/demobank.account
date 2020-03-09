@@ -8,6 +8,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NSubstitute;
 using DemoBank.Account.Infrastructure.Communication;
+using DemoBank.Account.CrossCutting.Enumerators;
 
 namespace DemoBank.Test
 {
@@ -121,6 +122,35 @@ namespace DemoBank.Test
             this.accountRepository.GetById(1101).Returns(account);
 
             Assert.AreEqual(null, this.accountController.GetAccount(1100).Value);
+        }
+
+        [TestMethod]
+        public void TestUpdateAccountBalance()
+        {
+            // Set account repository mock.
+            CustomerModel customer = new CustomerModel(1010, "John", "Doe");
+            AccountModel account = new AccountModel(1101, customer, 100);
+            TransactionModel transaction = new TransactionModel();
+            transaction.DestinationAccount = account;
+            transaction.TransactionType = TransactionTypes.DEPOSIT;
+            transaction.Value = 100;
+
+            this.accountRepository.GetById(1101).Returns(account);
+            this.accountRepository.Save(account).ReturnsForAnyArgs(1101);
+            
+            Assert.IsTrue(this.accountController.UpdateBalance(1101, transaction).Value);
+        }
+
+        [TestMethod]
+        public void GetAllAccounts()
+        {
+            // Set account repository mock.
+            CustomerModel customer = new CustomerModel(1010, "John", "Doe");
+            AccountModel account = new AccountModel(1101, customer, 100);
+            AccountModel[] accounts = new AccountModel[] { account };
+            this.accountRepository.GetAll().ReturnsForAnyArgs(accounts);
+
+            Assert.AreEqual(this.accountController.GetAllAccounts().Value.Length, 1);
         }
 
         #endregion
