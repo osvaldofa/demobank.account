@@ -1,5 +1,8 @@
-﻿namespace DemoBank.Account.CrossCutting.Enumerators
+﻿using System.Diagnostics.CodeAnalysis;
+
+namespace DemoBank.Account.CrossCutting.Enumerators
 {
+    [ExcludeFromCodeCoverage]
     public static class TransactionTypes
     {
         public const string DEPOSIT = "deposit";

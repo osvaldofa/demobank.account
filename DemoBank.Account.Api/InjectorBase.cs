@@ -4,12 +4,14 @@ using DemoBank.Account.Infrastructure.Communication;
 using DemoBank.Account.Infrastructure.Communication.Services;
 using DemoBank.Account.Infrastructure.Data.Repositories;
 using Microsoft.Extensions.DependencyInjection;
+using System.Diagnostics.CodeAnalysis;
 
 namespace DemoBank.Account.Api
 {
     /// <summary>
     /// Startup extension methods.
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public abstract class InjectorBase
     {
         /// <summary>

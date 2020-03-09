@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Text;
 
 namespace DemoBank.Account.Infrastructure.Data.Models
 {
+    [ExcludeFromCodeCoverage]
     public class CustomerModel
     {
         public long CustomerId { get; set; }

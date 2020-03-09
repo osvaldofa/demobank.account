@@ -5,6 +5,7 @@ using DemoBank.Account.Infrastructure.Data.Models;
 
 namespace DemoBank.Account.Infrastructure.Data.Repositories
 {
+    [ExcludeFromCodeCoverage]
     public class AccountRepository : IAccountRepository
     {
         private List<AccountModel> Accounts;

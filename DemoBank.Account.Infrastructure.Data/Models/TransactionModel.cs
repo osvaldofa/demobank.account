@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 
 namespace DemoBank.Account.Infrastructure.Data.Models
 {
+    [ExcludeFromCodeCoverage]
     public class TransactionModel
     {
         public long TransactionId { get; set; }

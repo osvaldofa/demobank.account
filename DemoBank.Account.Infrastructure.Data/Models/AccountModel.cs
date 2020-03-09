@@ -1,5 +1,8 @@
-﻿namespace DemoBank.Account.Infrastructure.Data.Models
+﻿using System.Diagnostics.CodeAnalysis;
+
+namespace DemoBank.Account.Infrastructure.Data.Models
 {
+    [ExcludeFromCodeCoverage]
     public class AccountModel
     {
         public long AccountNumber { get; set; }
