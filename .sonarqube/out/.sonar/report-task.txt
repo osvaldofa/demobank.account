@@ -1,0 +1,6 @@
+projectKey=DemoBank.Account
+serverUrl=http://168.62.50.180:9000
+serverVersion=7.4.0.18908
+dashboardUrl=http://168.62.50.180:9000/dashboard?id=DemoBank.Account
+ceTaskId=AXDAYWwMU6Ys3c7r6dH5
+ceTaskUrl=http://168.62.50.180:9000/api/ce/task?id=AXDAYWwMU6Ys3c7r6dH5

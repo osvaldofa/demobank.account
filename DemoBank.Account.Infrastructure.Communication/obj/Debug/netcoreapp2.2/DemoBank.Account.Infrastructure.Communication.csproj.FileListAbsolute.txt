@@ -18,3 +18,4 @@ C:\Development\Test\DemoBank\DemoBank.Account\TEST_RESULTS\DemoBank.Account.Infr
 C:\Development\Test\DemoBank\DemoBank.Account\TEST_RESULTS\DemoBank.Account.Infrastructure.Communication.runtimeconfig.dev.json
 C:\Development\Test\DemoBank\DemoBank.Account\TEST_RESULTS\DemoBank.Account.Infrastructure.Communication.dll
 C:\Development\Test\DemoBank\DemoBank.Account\TEST_RESULTS\DemoBank.Account.Infrastructure.Communication.pdb
+C:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.Infrastructure.Communication\obj\Debug\netcoreapp2.2\DemoBank.Account.Infrastructure.Communication.csproj.CoreCompileInputs.cache

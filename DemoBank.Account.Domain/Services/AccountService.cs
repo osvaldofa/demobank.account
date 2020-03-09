@@ -4,9 +4,11 @@ using DemoBank.Account.Infrastructure.Data.Repositories;
 using DemoBank.Account.CrossCutting.Enumerators;
 using Microsoft.Extensions.Logging;
 using DemoBank.Account.Infrastructure.Communication;
+using System.Diagnostics.CodeAnalysis;
 
 namespace DemoBank.Account.Domain.Services
 {
+    [ExcludeFromCodeCoverage]
     public class AccountService : IAccountService
     {
         // Data repository for Account objects.

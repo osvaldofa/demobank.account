@@ -2,10 +2,12 @@
 using DemoBank.Account.Infrastructure.Data.Models;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 
 namespace DemoBank.Account.Infrastructure.Data.Repositories
 {
+    [ExcludeFromCodeCoverage]
     public class TransactionRepository : ITransactionRepository
     {
         private List<TransactionModel> Transactions;

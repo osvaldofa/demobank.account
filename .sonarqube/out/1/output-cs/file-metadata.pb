@@ -1,0 +1,13 @@
+u
+sC:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.Infrastructure.Data\Interfaces\IAccountRepository.csv
+tC:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.Infrastructure.Data\Interfaces\ICustomerRepository.csy
+wC:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.Infrastructure.Data\Interfaces\ITransactionRepository.csk
+iC:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.Infrastructure.Data\Models\AccountModel.csl
+jC:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.Infrastructure.Data\Models\CustomerModel.csi
+gC:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.Infrastructure.Data\Models\NewAccount.cso
+mC:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.Infrastructure.Data\Models\TransactionModel.csv
+tC:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.Infrastructure.Data\Repositories\AccountRepository.csw
+uC:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.Infrastructure.Data\Repositories\CustomerRepository.csz
+xC:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.Infrastructure.Data\Repositories\TransactionRepository.cs_
+[C:\Users\o.ferreira.alves\AppData\Local\Temp\.NETCoreApp,Version=v2.2.AssemblyAttributes.cs¤
+ŸC:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.Infrastructure.Data\obj\Debug\netcoreapp2.2\DemoBank.Account.Infrastructure.Data.AssemblyInfo.cs

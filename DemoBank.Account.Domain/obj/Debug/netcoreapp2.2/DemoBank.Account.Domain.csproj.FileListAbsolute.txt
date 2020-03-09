@@ -20,3 +20,4 @@ C:\Development\Test\DemoBank\DemoBank.Account\TEST_RESULTS\DemoBank.Account.Doma
 C:\Development\Test\DemoBank\DemoBank.Account\TEST_RESULTS\DemoBank.Account.Domain.runtimeconfig.dev.json
 C:\Development\Test\DemoBank\DemoBank.Account\TEST_RESULTS\DemoBank.Account.Domain.dll
 C:\Development\Test\DemoBank\DemoBank.Account\TEST_RESULTS\DemoBank.Account.Domain.pdb
+C:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.Domain\obj\Debug\netcoreapp2.2\DemoBank.Account.Domain.csproj.CoreCompileInputs.cache

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using DemoBank.Account.Infrastructure.Data.Models;
 
@@ -11,6 +12,7 @@ namespace DemoBank.Account.Infrastructure.Data.Repositories
         /// <summary>
         /// Constructor method responsible for repository initialization.
         /// </summary>
+        [ExcludeFromCodeCoverage]
         public AccountRepository()
         {
             this.Accounts = new List<AccountModel>();

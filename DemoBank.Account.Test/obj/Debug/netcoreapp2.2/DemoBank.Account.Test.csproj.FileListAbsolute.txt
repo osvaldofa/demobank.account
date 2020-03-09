@@ -1,8 +1,3 @@
-C:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.Test\bin\Debug\netcoreapp2.2\appsettings.Development.json
-C:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.Test\bin\Debug\netcoreapp2.2\appsettings.Docker.Development.json
-C:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.Test\bin\Debug\netcoreapp2.2\appsettings.Docker.json
-C:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.Test\bin\Debug\netcoreapp2.2\appsettings.json
-C:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.Test\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
 C:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.Test\bin\Debug\netcoreapp2.2\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
 C:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.Test\bin\Debug\netcoreapp2.2\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
 C:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.Test\bin\Debug\netcoreapp2.2\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
@@ -41,3 +36,4 @@ C:\Development\Test\DemoBank\DemoBank.Account\TEST_RESULTS\DemoBank.Account.Test
 C:\Development\Test\DemoBank\DemoBank.Account\TEST_RESULTS\DemoBank.Account.Test.runtimeconfig.dev.json
 C:\Development\Test\DemoBank\DemoBank.Account\TEST_RESULTS\DemoBank.Account.Test.dll
 C:\Development\Test\DemoBank\DemoBank.Account\TEST_RESULTS\DemoBank.Account.Test.pdb
+C:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.Test\obj\Debug\netcoreapp2.2\DemoBank.Account.Test.csproj.CoreCompileInputs.cache

@@ -9,3 +9,4 @@ C:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.CrossCutting\obj\
 C:\Development\Test\DemoBank\DemoBank.Account\TEST_RESULTS\DemoBank.Account.CrossCutting.deps.json
 C:\Development\Test\DemoBank\DemoBank.Account\TEST_RESULTS\DemoBank.Account.CrossCutting.dll
 C:\Development\Test\DemoBank\DemoBank.Account\TEST_RESULTS\DemoBank.Account.CrossCutting.pdb
+C:\Development\Test\DemoBank\DemoBank.Account\DemoBank.Account.CrossCutting\obj\Debug\netcoreapp2.2\DemoBank.Account.CrossCutting.csproj.CoreCompileInputs.cache
