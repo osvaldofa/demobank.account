@@ -33,7 +33,7 @@ If you prefer run it locally may be used the IDE Visual Studio 2019, or even the
 How to run Tests?
 ------------------------------------------------
 
-Inside solution folder, type the command below:
+Inside solution folder, type the command below: 
 - dotnet test
 
 In case of througles, the link may help:
