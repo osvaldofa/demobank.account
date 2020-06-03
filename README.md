@@ -37,6 +37,6 @@ Inside solution folder, type the command below:
 - dotnet test
 
 In case of througles, the link may help:
-https://docs.microsoft.com/pt-br/dotnet/core/tools/dotnet-test
+https://docs.microsoft.com/pt-br/dotnet/core/tools/dotnet-test 
 
 
